@@ -17,3 +17,9 @@ func ExampleAvg_null() {
 	// Output:
 	// 0
 }
+
+func ExampleTotalInCategory_positive() {
+	fmt.Println(TotalInCategory([]types.Payment{{Amount: 10, Category: "Auto"},{Amount: 20, Category: "Internet"},}, "Auto"))
+	// Output:
+	// 10
+}
